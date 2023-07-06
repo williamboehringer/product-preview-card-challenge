@@ -1,0 +1,140 @@
+body {
+    display: flex;
+    background-color: hsl(30, 38%, 92%);
+    justify-content: center;
+    align-items: center;
+    height: 100svh;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 600px;
+    background-color: white;
+    border-radius: 25px;
+}
+
+.product-image {
+    background-image: url(./images/image-product-desktop.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 25px 0px 0px 25px;
+}
+
+section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.info-card {
+    gap: 20px;
+    padding: 25px;
+    background-color: white;
+    border-radius: 0px 25px 25px 0px;
+}
+
+.info-card h4 {
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: 1rem;
+    color: #888A88;
+    text-transform: uppercase;
+}
+.info-card h1 {
+    font-family: Fraunces;
+    font-weight: 700;
+    font-size: 2em;
+    line-height: 1.1;
+}
+
+button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #3C8067;
+    height: 3rem;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    width: 100%;
+    font-family: Fraunces;
+    font-size: 1rem;
+    gap: 10px;
+}
+
+.cart-icon {
+    width: 17px;
+    height: 15px;
+}
+
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: inherit;
+}
+
+.content p {
+    font-family: Montserrat;
+    color: #888A88;
+    font-weight: 500;
+    text-align: left;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+.price {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 30px;
+}
+
+.price h2 {
+    font-family: Fraunces;
+    color: #3C8067;
+    font-weight: 700;
+    font-size: 2rem;
+
+}
+
+.price span {
+    font-size: .8rem;
+    color: #888A88;
+    text-decoration: line-through;
+}
+
+@media(max-width:600px) {
+    body {
+        padding: 1rem;
+
+    }
+
+    main {
+        grid-template-columns: unset;
+        grid-template-rows: 1fr 2fr;
+        height: 100%;
+    }
+
+    .product-image {
+        border-radius: 25px 25px 0px 0px;
+        background-image: url(./images/image-product-mobile.jpg);
+    }
+
+    .info-card {
+        border-radius: 25px;
+        justify-content: space-between;
+    }
+
+    .content {
+        gap: 10px;
+    }
+
+}
+
