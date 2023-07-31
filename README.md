@@ -9,7 +9,7 @@ Users should be able to:
 - View the optimal layout depending on their device's screen size
 - See hover and focus states for interactive elements
 
-## Challenge Design Overview
+### Challenge Design Overview
 
 ![Design preview for the Product preview card component coding challenge](./design/desktop-preview.jpg)
 
